@@ -2,7 +2,9 @@ body{
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
 .hero-area{
     background-image: url(images/hero-bg.png);
     background-repeat: no-repeat;
@@ -11,7 +13,7 @@ body{
     position: relative;
     z-index: 1;
     height: 600px;
-    margin-bottom: 10px;
+    margin-bottom: 150px;
     
 }
 .hero-area::after{
@@ -25,13 +27,6 @@ body{
     opacity: 0.7;
     z-index: -1;
 }
-    
-.nav{
-    width: 100%;
-    height: 100px;
-    position: fixed;
-    display: block;
-}
 .logo-area{
     width: 400px;
     height: 20px;
@@ -41,22 +36,31 @@ body{
     font-size: 40px;
     margin-top: 10px;
 }
-
-
+.nav{
+    width: 100%;
+    height:90px;
+    position: sticky;
+    background-color: transparent;
+    z-index: 1;
+}
 .nav-var ul {
     display: flex;
     float: right;
-    margin-top: 0;
-}.nav-var ul li{
+    margin-top: 10px;
+}
+.nav-var ul li{
     display: block;
+    margin-top: 10px;
 }
 .nav-var ul li a {
     text-decoration: none;
-    font-size:25px;
+    text-transform: uppercase;
+    font-size:18px;
     padding: 10px;
     color: #fff;
     margin-right: 20px;
     float: right;
+    letter-spacing: 2px;
 
 }
 .nav-var ul li a:hover{
@@ -66,7 +70,8 @@ body{
 
 .portfolio{
     margin-left: 80px;
-    
+    position: absolute;
+    margin-top: 100px;
 }
 .name h1{
     color: #fff;
@@ -93,4 +98,111 @@ body{
 }
 .red-color{
     color: #DC143C;
+}
+
+.flexible-container-1 {
+    width: 97%;
+    margin: 0 auto;
+}
+.sectione-two h2{
+    font-size: 60px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.sectione-two .service-text p{
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    line-height: 30px;
+}
+.services{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 200px;
+}
+
+.web{
+    width: 250px;
+    height: 350px;
+    background-image: url(images/img-1.png);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    padding-left: 20px;
+    
+}
+.web ::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color:#525D68;
+    opacity: 0.7;
+    z-index: -1;
+}
+.web h3{
+    font-size: 25px;
+    color: #fff;
+    margin: 0px;
+
+}
+.web p{
+    color: #fff;
+    font-size: 17px;
+    line-height:25px;
+    margin-top: 5px;
+
+}
+.web img {
+    margin-top: 30px;
+    
+}
+.section-three h2{
+    text-align: center;
+    font-size: 70px;
+    font-weight: 400;
+
+    
+}
+.flexible-continer-2{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 200px;
+}
+.half-width{
+    width: 50%;
+    height: 400px;
+}
+.project{
+    display: flex;
+}
+.project-info{
+    flex-basis: 50%;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(60deg, rgb(41, 50, 60) 0%, rgb(72, 85, 99) 100%);
+    color: white;
+    padding: 30px;
+}
+.project-info h3{
+ font-size: 40px;
+}
+.project-info h4 {
+    font-size: 20px;
+}
+.project-info p{
+    line-height: 30px;
+}
+.half-width img {
+    width: 100%;
 }
